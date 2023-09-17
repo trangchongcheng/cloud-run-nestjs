@@ -23,4 +23,4 @@ COPY --from=builder /app/dist ./dist
 
 RUN yarn install --production
 
-ENTRYPOINT ["node", "dist/src/main.js"]
+ENTRYPOINT ["node", "dist/main.js"]
